@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "mesaarcana",
+  "version": "${version}",
+  "name": "Mesa Arcana",
+  "description": "Efectos magicos en cliente para la mesa de encantamiento: anillos de runas, runas flotantes, runas en el suelo y haz de luz. Mas fuertes con mas estanterias.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.mesaarcana.MesaArcanaClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": ">=26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
