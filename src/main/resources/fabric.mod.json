@@ -3,7 +3,7 @@
   "id": "mesaarcana",
   "version": "${version}",
   "name": "Mesa Arcana",
-  "description": "Efectos magicos en cliente para la mesa de encantamiento: anillos de runas, runas flotantes, runas en el suelo y haz de luz. Mas fuertes con mas estanterias.",
+  "description": "Efectos magicos dibujados alrededor de la mesa de encantamiento: anillos de runas, circulo en el suelo, runas flotantes y haz de luz.",
   "authors": [],
   "license": "MIT",
   "environment": "client",

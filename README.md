@@ -1,21 +1,23 @@
 # Mesa Arcana (mod de cliente, Fabric, Minecraft 26.1.2)
 
-Efectos magicos alrededor de la mesa de encantamiento, solo en tu cliente:
+Dibuja efectos con texturas propias alrededor de la mesa de encantamiento (la mesa y el libro
+siguen siendo los de vanilla):
 
-- Anillos de runas girando alrededor del libro (el exterior y uno interior en sentido contrario)
-- Runas sueltas que suben
-- Haz de luz vertical sobre el libro
-- Runas brillantes en el suelo alrededor de la mesa
-- Mas estanterias alrededor = mas runas, mas luz y giro mas rapido
-
-Funciona solo o junto al resource pack MesaArcana.zip.
+- Dos anillos de runas brillantes que flotan y giran alrededor del libro
+- Un circulo magico en el suelo (con un anillo de runas que gira)
+- Runas sueltas que suben y siempre miran a la camara
+- Un haz de luz sobre el libro
+- Mas estanterias alrededor = mas brillo, mas runas y giro mas rapido
 
 ## Compilar con GitHub
-1. Sube todo este proyecto a un repo de GitHub.
-2. Pestana Actions -> "build" -> Run workflow (o se lanza solo al hacer push).
-3. Descarga el artifact "MesaArcana": ahi esta el .jar (no uses el -sources.jar).
-4. Copia el .jar a la carpeta mods junto con Fabric API.
+1. Sube todo este proyecto a un repo.
+2. Actions -> build -> Run workflow.
+3. Baja el artifact "MesaArcana" y usa el .jar que no termine en -sources.
+4. Ponlo en mods con Fabric API.
 
 ## Ajustes
-Se crea config/mesaarcana.json la primera vez. Si lo editas y guardas, se recarga solo
-(en 2 segundos) sin cerrar el juego: efectos on/off, density, ringHeight, maxDistance y colores.
+config/mesaarcana.json (se recarga solo): enabled, ring, floor, glyphs, beam, intensity, speed.
+
+## Cambiar los dibujos
+Las texturas estan en assets/mesaarcana/textures/effect/ (PNG con transparencia).
+Puedes reemplazarlas con un resource pack con la misma ruta.
